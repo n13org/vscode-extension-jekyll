@@ -1,7 +1,11 @@
 {
     "name": "vscode-extension-jekyll-kw",
     "displayName": "jekyll",
-    "description": "Jekyll - a static page generator snippets for Visual Studio Code",
+    "description": "Jekyll (a ruby based static page generator) snippets for Visual Studio Code",
+    "publisher": "kargware",    
+    "repository": {
+        "url": "https://github.com/n13org/vscode-extension-jekyll"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.59.0"
