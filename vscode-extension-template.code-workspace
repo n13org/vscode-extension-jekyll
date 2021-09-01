@@ -1,0 +1,29 @@
+{
+  "folders": [{
+    "path": "."
+  }],
+  "extensions": {
+    "recommendations": [
+      "streetsidesoftware.code-spell-checker",
+      "streetsidesoftware.code-spell-checker-german"
+    ]
+  },
+  "settings": {
+    "cSpell.ignorePaths": [
+      "**/**.code-workspace",
+      "**/Gemfile",
+      "**/Gemfile.lock",
+      "**/package-lock.json",
+      "**/node_modules/**",
+      "**/vscode-extension/**",
+      "**/.git/objects/**",
+      ".vscode",
+      ".vscode-insiders"
+    ],
+    "cSpell.language": "en,de",
+    "cSpell.words": [
+      "Karg",
+      "KargWare"
+    ]
+  }
+}
