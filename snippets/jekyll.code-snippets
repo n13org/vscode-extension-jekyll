@@ -1,0 +1,22 @@
+{
+    "Insert a Code Block (html) in jekyll markdown":{
+		"prefix": "kw-mdCode-jekyll-html",
+		"scope": "markdown",
+		"body": [
+			"{:codelabel=\"HTML\" filename=\"example.html\" .myCustomClass #myCustomId}",
+			"```html",
+			"<!DOCTYPE html>",
+			"<html>",
+			"<body>",
+			"",
+			"<h1>My First Heading</h1>",
+			"<p>My first paragraph.</p>",
+			"",
+			"</body>",
+			"</html>",
+			"",
+			"```"
+		],
+		"description": "Insert a code block (html) in a jekyll markdown file"
+	}
+}
