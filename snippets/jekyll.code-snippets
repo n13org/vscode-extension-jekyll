@@ -18,5 +18,30 @@
 			"```"
 		],
 		"description": "Insert a code block (html) in a jekyll markdown file"
-	}
+	},
+  "Comment Block": {
+    "prefix": "kw-jekyll-commentout",
+    "scope": "html,markdown",
+    "body": [
+      "{% comment %}<!--",
+      "-->{% endcomment %}"
+    ],
+    "description": "Start and end a jekyll liquid and HTML comment as block"
+  },
+  "Start Comment": {
+    "prefix": "kw-jekyll-start-commentout",
+    "scope": "html,markdown",
+    "body": [
+      "{% comment %}<!--"
+    ],
+    "description": "Start a jekyll liquid and HTML comment"
+  },
+  "End Comment": {
+    "prefix": "kw-jekyll-end-commentout",
+    "scope": "html,markdown",
+    "body": [
+      "-->{% endcomment %}"
+    ],
+    "description": "End a jekyll liquid and HTML comment"
+  }
 }
