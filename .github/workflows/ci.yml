@@ -37,7 +37,8 @@ jobs:
           retention-days: 5
 
       - name: VSCE Publish
-        if: success() && startsWith( github.ref, 'refs/tags/releases/' )
+        # if: success() && startsWith( github.ref, 'refs/tags/releases/' )
+        if: success() && startsWith( github.ref, 'refs/tags/v*/' )
         run: vsce publish
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
