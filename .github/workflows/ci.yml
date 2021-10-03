@@ -51,6 +51,7 @@ jobs:
     needs: build
     name: Publish to Marketplace
     steps:
+      - uses: actions/checkout@v2
       - name: Setup node
         uses: actions/setup-node@v2
         with:
