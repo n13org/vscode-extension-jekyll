@@ -2,6 +2,7 @@
     "name": "vscode-extension-jekyll-kw",
     "displayName": "jekyll",
     "description": "Jekyll (a ruby based static page generator) snippets for Visual Studio Code",
+    "icon": "images/icon.png",
     "publisher": "kargware",    
     "repository": {
         "url": "https://github.com/n13org/vscode-extension-jekyll"
