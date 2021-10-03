@@ -33,7 +33,7 @@ jobs:
       # https://github.com/actions/upload-artifact
       - uses: actions/upload-artifact@v2
         with:
-          name: vsix
+          name: vsix created with Node ${{ matrix.node }}
           path: ./*.vsix
           if-no-files-found: error
           retention-days: 5
@@ -44,18 +44,3 @@ jobs:
         run: vsce publish
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-
-# npm install --save-dev
-# npm run vsce-package
-# artifact
-
-# env:
-#     VSCE_PAT: ${{ secrets.VSCE_PAT }}
-# npm run vsce-publish
-
-  
-# - name: Publish
-#   if: success() && startsWith( github.ref, 'refs/tags/releases/') && matrix.os == 'ubuntu-latest'
-#   run: npm run deploy
-#   env:
-#     VSCE_PAT: ${{ secrets.VSCE_PAT }}
