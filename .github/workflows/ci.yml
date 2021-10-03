@@ -27,7 +27,7 @@ jobs:
           # cache: 'npm'
       # - run: npm install --save-dev
       # - run: npm run vsce-package
-      - run: npm install -g vsce        
+      - run: npm install -g vsce
       - run: vsce package # --out ./output
 
       # https://github.com/actions/upload-artifact
@@ -50,6 +50,11 @@ jobs:
     needs: build
     name: Publish
     steps:
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - run: npm install -g vsce
       - uses: actions/download-artifact@master
         with:
           name: vsix
