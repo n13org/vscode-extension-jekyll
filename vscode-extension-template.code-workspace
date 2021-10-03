@@ -2,12 +2,6 @@
   "folders": [{
     "path": "."
   }],
-  "extensions": {
-    "recommendations": [
-      "streetsidesoftware.code-spell-checker",
-      "streetsidesoftware.code-spell-checker-german"
-    ]
-  },
   "settings": {
     "cSpell.ignorePaths": [
       "**/**.code-workspace",
