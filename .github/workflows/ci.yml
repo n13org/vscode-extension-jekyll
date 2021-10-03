@@ -23,8 +23,10 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           cache: 'npm'
-      - run: npm install --save-dev
-      - run: npm run vsce-package
+      # - run: npm install --save-dev
+      # - run: npm run vsce-package
+      - run: npm install -g vsce
+      - run: vsce package
 
       # https://github.com/actions/upload-artifact
       - uses: actions/upload-artifact@v2
