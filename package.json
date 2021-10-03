@@ -1,21 +1,25 @@
 {
+  "name": "vscode-extension-jekyll-kw",
+  "displayName": "jekyll",
+  "description": "Jekyll (a ruby based static page generator) snippets for Visual Studio Code",
   "icon": "images/vsce-jekyll-kw-128x128.png",
-    "repository": {
-        "url": "https://github.com/n13org/vscode-extension-jekyll"
-    },
-    "version": "0.0.2",
-    "engines": {
-        "vscode": "^1.59.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "markdown",
-                "path": "./snippets/jekyll.code-snippets"
-            }
-        ]
-    }
+  "publisher": "kargware",    
+  "repository": {
+    "url": "https://github.com/n13org/vscode-extension-jekyll"
+  },
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.59.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./snippets/jekyll.code-snippets"
+      }
+    ]
+  }
 }
