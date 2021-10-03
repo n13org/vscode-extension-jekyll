@@ -61,7 +61,15 @@ jobs:
         with:
           name: vsix
           path: ./
-      - name: VSCE Publish
+      - name: Publish to Marketplace via VSCE
         run: vsce publish
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      # https://github.com/softprops/action-gh-release
+      - name: Release inside GitHub
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "Release {{ tag_name }}"
+          body: "Foo Bar"
+        #   body_path: ${{ github.workspace }}-CHANGELOG.txt
