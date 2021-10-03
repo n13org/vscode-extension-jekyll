@@ -13,7 +13,7 @@ See all extensions from Kargware on the [Marketplace](https://marketplace.visual
 Create a tag which starts with a `v`, e.g. `v0.0.1`. Then the [CI pipeline](.github/workflows/ci.yml) will execute the `publish` job.
 
 ```sh
-git tag v0.0.0
+git tag v0.0.0 HEAD
 git push --tags
 ```
 
